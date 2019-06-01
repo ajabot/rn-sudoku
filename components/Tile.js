@@ -8,19 +8,22 @@ const Tile = (props) => {
     const styles = StyleSheet.create({
         tile: {
             borderWidth: 1,
-            flexBasis: 33,
+            flex: 1,
+            aspectRatio: 1,
+            alignItems: 'center',
+            justifyContent: 'center',
             backgroundColor: tileBackgroundColor
         }
     });
     
     return (
-        <View style={styles.tile}>
-            <TouchableWithoutFeedback onPress={props.clickEvent.bind(null, null, props.xIndex, props.yIndex)}>
+        <TouchableWithoutFeedback onPress={props.clickEvent.bind(null, null, props.xIndex, props.yIndex)}>
+            <View style={styles.tile}>
                 <Text>
                     {props.content}
                 </Text>
-            </TouchableWithoutFeedback>
-        </View>
+            </View>
+        </TouchableWithoutFeedback>
     )
 }
 

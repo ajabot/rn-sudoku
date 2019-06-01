@@ -5,8 +5,10 @@ import Grid from './components/Grid'
 export default class App extends React.Component {
   render() {
     return (
-      <View>
+      <View style={{ flex: 1}}>
+        <View style={{ flex: 1}}></View>
         <Grid/>
+        <View style={{ flex: 1}}></View>
       </View>
     );
   }
