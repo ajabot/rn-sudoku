@@ -16,11 +16,12 @@ const Tile = (props) => {
         }
     });
     
+    let content = props.content > 0 ? props.content : '';
     return (
         <TouchableWithoutFeedback onPress={props.clickEvent.bind(null, null, props.xIndex, props.yIndex)}>
             <View style={styles.tile}>
                 <Text>
-                    {props.content}
+                    {content}
                 </Text>
             </View>
         </TouchableWithoutFeedback>
