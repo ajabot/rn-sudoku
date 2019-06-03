@@ -4,18 +4,6 @@ import { StyleSheet, Text, View, TouchableWithoutFeedback } from 'react-native'
 let tileBackgroundColor
 
 const Tile = (props) => {
-    let tileBackgroundColor = props.isHighlighted ? 'skyblue' : '#fff'
-    const styles = StyleSheet.create({
-        tile: {
-            borderWidth: 1,
-            flex: 1,
-            aspectRatio: 1,
-            alignItems: 'center',
-            justifyContent: 'center',
-            backgroundColor: tileBackgroundColor
-        }
-    });
-    
     let content = props.content > 0 ? props.content : '';
     return (
         <TouchableWithoutFeedback onPress={props.clickEvent.bind(null, null, props.xIndex, props.yIndex)}>
@@ -27,5 +15,16 @@ const Tile = (props) => {
         </TouchableWithoutFeedback>
     )
 }
+
+const styles = StyleSheet.create({
+    tile: {
+        borderWidth: 1,
+        flex: 1,
+        aspectRatio: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: '#fff'
+    }
+});
 
 export default Tile

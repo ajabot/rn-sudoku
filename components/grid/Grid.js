@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { StyleSheet, Text, View } from 'react-native'
-import Tile from './Tile'
 import Block from './Block'
 
 export default class Grid extends React.Component {
