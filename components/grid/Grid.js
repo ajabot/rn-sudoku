@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { Dimensions, StyleSheet, Text, View } from 'react-native'
 import Block from './Block'
 
 export default class Grid extends React.Component {
@@ -84,7 +84,8 @@ export default class Grid extends React.Component {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 2
+        width: Dimensions.get('window').width,
+        aspectRatio: 1,
     },
     row: {
         flexDirection: 'row'
