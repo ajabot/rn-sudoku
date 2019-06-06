@@ -1,0 +1,1 @@
+export const getBlock = (store, blockId) => store.blocks[blockId]

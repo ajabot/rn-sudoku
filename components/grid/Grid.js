@@ -1,56 +1,10 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 import { Dimensions, StyleSheet, Text, View } from 'react-native'
+import { selectTile } from "../../actions/actions";
 import Block from './Block'
 
-export default class Grid extends React.Component {
-    constructor(props) {
-        super(props)
-
-        let lines = [
-            [2, 5, 0, 0, 0, 1, 0, 0, 0],
-            [0, 7, 9, 0, 9, 0, 5, 0, 0],
-            [0, 0, 0, 0, 0, 0, 7, 0, 2],
-            [0, 0, 0, 0, 0, 0, 0, 7, 0],
-            [3, 0, 0, 8, 5, 2, 0, 0, 1],
-            [0, 6, 0, 0, 0, 0, 0, 0, 0],
-            [9, 0, 6, 0, 0, 0, 0, 0, 0],
-            [0, 0, 1, 0, 2, 0, 6, 8, 0],
-            [0, 0, 0, 9, 0, 0, 0, 3, 5],
-        ]
-
-        let columns = [
-            [2, 0, 0, 0, 3, 0, 9, 0, 0],
-            [5, 7, 0, 0, 0, 6, 0, 0, 0],
-            [0, 9, 0, 0, 0, 0, 6, 1, 0],
-            [0, 0, 0, 0, 8, 0, 0, 0, 9],
-            [0, 9, 0, 0, 5, 0, 0, 2, 0],
-            [1, 0, 0, 0, 2, 0, 0, 0, 0],
-            [0, 5, 7, 0, 0, 0, 0, 6, 0],
-            [0, 0, 0, 7, 0, 0, 0, 8, 3],
-            [0, 0, 2, 0, 1, 0, 0, 0, 5],
-        ]
-
-        let blocks = [
-            [2, 5, 0, 0, 7, 9, 0, 0, 0],
-            [0, 0, 1, 0, 3, 0, 0, 0, 0],
-            [0, 0, 0, 5, 0, 0, 7, 0, 2],
-            [0, 0, 0, 3, 0, 0, 0, 6, 0],
-            [0, 0, 0, 8, 5, 2, 0, 0, 0],
-            [0, 7, 0, 0, 0, 1, 0, 0, 0],
-            [9, 0, 6, 0, 0, 1, 0, 0, 0],
-            [0, 0, 0, 0, 2, 0, 9, 0, 0],
-            [0, 0, 0, 6, 8, 0, 0, 3, 5],
-        ]
-
-        this.state = {
-            highlightedRow: null,
-            highlightedColumn: null,
-            lines: lines,
-            columns: columns,
-            blocks: blocks
-        }
-    }
-    
+class Grid extends React.Component {  
     onTileClick(e, row, column) {
         this.setState({
             highlightedRow: row,
@@ -63,19 +17,19 @@ export default class Grid extends React.Component {
         return (
             <View style={styles.container}>
                 <View style={styles.row}>
-                    <Block xIndex={0} yIndex={0} numbers={this.state.blocks[0]} highlightedColumn={this.state.highlightedColumn} highlightedRow={this.state.highlightedRow} clickEvent={this.onTileClick}/>
-                    <Block xIndex={1} yIndex={0} numbers={this.state.blocks[1]} highlightedColumn={this.state.highlightedColumn} highlightedRow={this.state.highlightedRow} clickEvent={this.onTileClick}/>
-                    <Block xIndex={2} yIndex={0} numbers={this.state.blocks[2]} highlightedColumn={this.state.highlightedColumn} highlightedRow={this.state.highlightedRow} clickEvent={this.onTileClick}/>
+                    <Block blockIndex={0} xIndex={0} yIndex={0} highlightedColumn={this.props.highlightedColumn} highlightedRow={this.props.highlightedRow} clickEvent={this.onTileClick}/>
+                    <Block blockIndex={1} xIndex={1} yIndex={0} highlightedColumn={this.props.highlightedColumn} highlightedRow={this.props.highlightedRow} clickEvent={this.onTileClick}/>
+                    <Block blockIndex={2} xIndex={2} yIndex={0} highlightedColumn={this.props.highlightedColumn} highlightedRow={this.props.highlightedRow} clickEvent={this.onTileClick}/>
                 </View>
                 <View style={styles.row}>
-                    <Block xIndex={0} yIndex={1} numbers={this.state.blocks[3]} highlightedColumn={this.state.highlightedColumn} highlightedRow={this.state.highlightedRow} clickEvent={this.onTileClick}/>
-                    <Block xIndex={1} yIndex={1} numbers={this.state.blocks[4]} highlightedColumn={this.state.highlightedColumn} highlightedRow={this.state.highlightedRow} clickEvent={this.onTileClick}/>
-                    <Block xIndex={2} yIndex={1} numbers={this.state.blocks[5]} highlightedColumn={this.state.highlightedColumn} highlightedRow={this.state.highlightedRow} clickEvent={this.onTileClick}/>
+                    <Block blockIndex={3} xIndex={0} yIndex={1} highlightedColumn={this.props.highlightedColumn} highlightedRow={this.props.highlightedRow} clickEvent={this.onTileClick}/>
+                    <Block blockIndex={4} xIndex={1} yIndex={1} highlightedColumn={this.props.highlightedColumn} highlightedRow={this.props.highlightedRow} clickEvent={this.onTileClick}/>
+                    <Block blockIndex={5} xIndex={2} yIndex={1} highlightedColumn={this.props.highlightedColumn} highlightedRow={this.props.highlightedRow} clickEvent={this.onTileClick}/>
                 </View>
                 <View style={styles.row}>
-                    <Block xIndex={0} yIndex={2} numbers={this.state.blocks[6]} highlightedColumn={this.state.highlightedColumn} highlightedRow={this.state.highlightedRow} clickEvent={this.onTileClick}/>
-                    <Block xIndex={1} yIndex={2} numbers={this.state.blocks[7]} highlightedColumn={this.state.highlightedColumn} highlightedRow={this.state.highlightedRow} clickEvent={this.onTileClick}/>
-                    <Block xIndex={2} yIndex={2} numbers={this.state.blocks[8]} highlightedColumn={this.state.highlightedColumn} highlightedRow={this.state.highlightedRow} clickEvent={this.onTileClick}/>
+                    <Block blockIndex={6} xIndex={0} yIndex={2} highlightedColumn={this.props.highlightedColumn} highlightedRow={this.props.highlightedRow} clickEvent={this.onTileClick}/>
+                    <Block blockIndex={7} xIndex={1} yIndex={2} highlightedColumn={this.props.highlightedColumn} highlightedRow={this.props.highlightedRow} clickEvent={this.onTileClick}/>
+                    <Block blockIndex={8} xIndex={2} yIndex={2} highlightedColumn={this.props.highlightedColumn} highlightedRow={this.props.highlightedRow} clickEvent={this.onTileClick}/>
                 </View>
             </View>
         );
@@ -91,3 +45,12 @@ const styles = StyleSheet.create({
         flexDirection: 'row'
     }
 });
+
+const mapStateToProps = state => {
+    return { 
+        highlightedColumn: state.highlightedColumn,
+        highlightedRow: state.highlightedRow
+    };
+};
+
+connect(mapStateToProps, {selectTile})(Grid)

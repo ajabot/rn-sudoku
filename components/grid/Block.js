@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import { StyleSheet, View } from 'react-native'
+import { connect } from 'react-redux'
+
 import Tile from './tiles/Tile'
 import HighlightedTile from './tiles/HighlightedTile'
 import SelectedTile from './tiles/SelectedTile'
 
-export default class Block extends React.Component {
+class Block extends React.Component {
     onTileClick(e, row, column) {
         this.setState({
             highlightedRow: row,
@@ -77,3 +79,9 @@ const styles = StyleSheet.create({
         flexDirection: 'row'
     }
 });
+
+const mapStateToProps = state => {
+    return { numbers: getBlock(state, this.props.blockId) };
+};
+
+export default connect(mapStateToProps)(Block);
