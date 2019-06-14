@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/salad/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/26.1.0/814258103cf26a15fcc26ecce35f5b7d24b73f8/support-annotations-26.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="0814258103cf26a15fcc26ecce35f5b7d24b73f8">
+        <dex dex="/Users/salad/git/rn-sudoku/android/app/build/intermediates/pre-dexed/debug/support-annotations-26.1.0_fd24285cbbcbeefbdbf7f75882bd95c0ba1fc3e4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/salad/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/Users/salad/git/rn-sudoku/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_b0a869ee6e1e2f08d28b47119447c0c452baab79.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/salad/.android/build-cache/706fe06f80d87caf1c41dadbeddd996193e3073d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="6f4138a4e065826cb044d49faea4cfd7191773d1">
+        <dex dex="/Users/salad/git/rn-sudoku/android/app/build/intermediates/pre-dexed/debug/classes_6fd88e8b241e5ea79fe2257df1fda140e77d4844.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/salad/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.10.0/7ef0f1d95bf4c0b3ba30bbae25e0e562b05cf75e/okhttp-3.10.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="7ef0f1d95bf4c0b3ba30bbae25e0e562b05cf75e">
+        <dex dex="/Users/salad/git/rn-sudoku/android/app/build/intermediates/pre-dexed/debug/okhttp-3.10.0_b192883c74379600cbe474eb297e8718be082f43.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/salad/.android/build-cache/b473923f3d190e2586f136a3f8a9a2c0fbbbf188/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="40392f30a601db5675cdf18192aab013d6fee6ec">
+        <dex dex="/Users/salad/git/rn-sudoku/android/app/build/intermediates/pre-dexed/debug/classes_71f5e6bb8e9d21bc25293d65926c8db0d0fa48ae.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/salad/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="/Users/salad/git/rn-sudoku/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_f9153fb1131fe04281987b41835f86c1ad03ff99.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/salad/.android/build-cache/56f60bf86bbb8ef0ed633b0b48adcfb4456caa0b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="2442771a5590dd4eb4bce00c2e9dca9e22e4c963">
+        <dex dex="/Users/salad/git/rn-sudoku/android/app/build/intermediates/pre-dexed/debug/classes_4f692bc946ee5866ed498ac75e2a310b8d140d3d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/salad/.android/build-cache/00178009f0c804af99a93f567bcf1e40cfb3f4a3/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="da59c80e4a1c8df62d2b4188ef3efddab8afa236">
+        <dex dex="/Users/salad/git/rn-sudoku/android/app/build/intermediates/pre-dexed/debug/classes_ebef796af045c8515ca7181c2c0f6d671db5b82a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/salad/.android/build-cache/3cf87f8f2989ca956fca592eb9e62f45e3be7e19/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/Users/salad/git/rn-sudoku/android/app/build/intermediates/pre-dexed/debug/classes_a318c9bbb6299ea16ecc243a59af601cc14df804.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/salad/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.0.0/a2d487452376193fc8c103dd2b9bd5f2b1b44563/common-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="a2d487452376193fc8c103dd2b9bd5f2b1b44563">
+        <dex dex="/Users/salad/git/rn-sudoku/android/app/build/intermediates/pre-dexed/debug/common-1.0.0_3e1befa9be1882f445d87eeed96271495a2dbb26.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/salad/.android/build-cache/7c12dacfb4b9e3e5d78216835029fca9635d3297/output/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="/Users/salad/git/rn-sudoku/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_fc44d08d1b3bc82d8028e261b0ff157765926776.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/salad/.android/build-cache/4050845c215bc39da00ab435efa9058baa3569c9/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="f97cf85b0fe70d37a705111dafa6b1b418ea1650">
+        <dex dex="/Users/salad/git/rn-sudoku/android/app/build/intermediates/pre-dexed/debug/classes_36753b8f58f6418adfa0a19179c6038ea2c2eded.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/salad/.android/build-cache/f2b02fdd2b1e86063ac8b46b0cd1f02725ba5578/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="1c9837ec75b2273699379c2ba0ae63d669b4f08c">
+        <dex dex="/Users/salad/git/rn-sudoku/android/app/build/intermediates/pre-dexed/debug/classes_3655b5245bc9ef999c94916449fe0ff21aa15c2e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/salad/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.10.0/ec614c05825ddd2267677a99f585d3913474b125/okhttp-urlconnection-3.10.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="ec614c05825ddd2267677a99f585d3913474b125">
+        <dex dex="/Users/salad/git/rn-sudoku/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.10.0_92d53f45ba0e8a12e0cb4f09235b5d9f09260f55.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/salad/.android/build-cache/8e7ada4b42e62c891fbf0ff306d1e0c0ffc335d8/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="b62fdc4cfef174c1e456014195c83fa7de7dc041">
+        <dex dex="/Users/salad/git/rn-sudoku/android/app/build/intermediates/pre-dexed/debug/classes_e97f07a1149eef79f060c98b551e9521ec3c35b0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/salad/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.14.0/102d7be47241d781ef95f1581d414b0943053130/okio-1.14.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="102d7be47241d781ef95f1581d414b0943053130">
+        <dex dex="/Users/salad/git/rn-sudoku/android/app/build/intermediates/pre-dexed/debug/okio-1.14.0_cfe69c1de2f591e4bece1aa5ad9357fa875ffccd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/salad/.android/build-cache/4d36e76e31d013d1f13c89b003f832fb6cdea9f6/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="dc6c0959ecc7b21932675183573b2bcecf2687b9">
+        <dex dex="/Users/salad/git/rn-sudoku/android/app/build/intermediates/pre-dexed/debug/classes_aba74743f7368837f99be60e3b2b904f6144b48b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/salad/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.0/e414a4cb28434e25c4f6aa71426eb20cf4874ae9/common-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="e414a4cb28434e25c4f6aa71426eb20cf4874ae9">
+        <dex dex="/Users/salad/git/rn-sudoku/android/app/build/intermediates/pre-dexed/debug/common-1.0.0_6919020513f57a7b16b067adf75aaa00813d5ac0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/salad/.android/build-cache/f35da83521a3b08b1514e760f85fd141c38957d4/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="87382214d92be4e3c931cb6aa7aa4e827bc179b7">
+        <dex dex="/Users/salad/git/rn-sudoku/android/app/build/intermediates/pre-dexed/debug/classes_e7a84b151b1061563d69b81747105a6d50baf002.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/salad/.android/build-cache/5a4c1279fcf86c98f4e94ae3b7d79027afeadab0/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="f80a752d1333efd4fb9b87da63e73909acb151af">
+        <dex dex="/Users/salad/git/rn-sudoku/android/app/build/intermediates/pre-dexed/debug/classes_de71327431f1eded25104cc6b05e8cfa74b91f02.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/salad/.android/build-cache/85d381a2008d06087ee2c7afed223d993c1db339/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="7efef32744ca4a436492d5cf28c08698cc2af256">
+        <dex dex="/Users/salad/git/rn-sudoku/android/app/build/intermediates/pre-dexed/debug/classes_6e21592a05445ccdf1e091ca334e5374414ccaa8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/salad/.android/build-cache/ff7088ed0288066f9512fb25f2cee574afe542ec/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="9803a14716e9f462afb5742811f3456c39f3be3a">
+        <dex dex="/Users/salad/git/rn-sudoku/android/app/build/intermediates/pre-dexed/debug/classes_b2b7e9840f95cd505762e5f66943707ea8de75cd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/salad/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/salad/git/rn-sudoku/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_ed32969828df0b5d67dffae369407ad6ccf83827.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/salad/.android/build-cache/7c12dacfb4b9e3e5d78216835029fca9635d3297/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="e7a850c25a7efbd533c496ab482c980fdafac58d">
+        <dex dex="/Users/salad/git/rn-sudoku/android/app/build/intermediates/pre-dexed/debug/classes_9d8b8be3d77cd31680677745c4e4c8d3c3d6c325.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/salad/.android/build-cache/c486efbe78af920aaa8840509d8acedd3ba74d13/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/salad/git/rn-sudoku/android/app/build/intermediates/pre-dexed/debug/classes_37c92721438476c73b36568f3ffe4ef5e5f830d3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/salad/.android/build-cache/c4c180f22470301dc4ed7a18e9e2b5967927d18c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="f428e2fbc9ed0b297e3a3f420e51e6982f66822d">
+        <dex dex="/Users/salad/git/rn-sudoku/android/app/build/intermediates/pre-dexed/debug/classes_134f48bfa06c9b5a25b977f6cb4273e4019d4781.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/salad/.android/build-cache/134e60d573d05bdfcaa88c810b6479453d57b7f7/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="508f50705b4fde51a16259f29c854201a3044516">
+        <dex dex="/Users/salad/git/rn-sudoku/android/app/build/intermediates/pre-dexed/debug/classes_e9e94267c6103e56fac8be138beecbfab7e5dc15.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/salad/.android/build-cache/0d275634c0b8cf805e702f4cd85868db2e826f80/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="ae15c560bc6685007440d8a70686f8348bafd791">
+        <dex dex="/Users/salad/git/rn-sudoku/android/app/build/intermediates/pre-dexed/debug/classes_c2a7ab727f941c86352b58f37c87a989cb0c05ab.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/salad/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Users/salad/git/rn-sudoku/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_9e83d0990025f59610e292b2da37b28c3d36f963.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/salad/.android/build-cache/09d9cad4a06decbeeacd2cc0a75426ad5478b0bb/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.3"
+        sha1="233f60a165ae622c8b36731502ebbda0f65e1930">
+        <dex dex="/Users/salad/git/rn-sudoku/android/app/build/intermediates/pre-dexed/debug/classes_f5b420c1b186f88ed289142ca05f9a438b1f28e3.jar" />
+    </item>
+
+</items>

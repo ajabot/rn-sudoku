@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/salad/git/rn-sudoku/android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi/ic_launcher_round.png",
+        "source": "/Users/salad/git/rn-sudoku/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/salad/git/rn-sudoku/android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi/ic_launcher.png",
+        "source": "/Users/salad/git/rn-sudoku/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    }
+]
