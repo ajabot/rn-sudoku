@@ -1,5 +1,5 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react'
+import { StyleSheet, Text, View } from 'react-native'
 import { Provider } from 'react-redux'
 import Grid from './components/grid/Grid'
 import NumbersPanel from './components/controls/NumbersPanel'

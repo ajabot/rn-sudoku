@@ -1,1 +1,3 @@
-export const getBlock = (store, blockId) => store.blocks[blockId]
+export const getBlock = (store, blockId) => {
+    return store.blocks[blockId]
+}

@@ -50,7 +50,7 @@ export default function (state = initialState, action) {
             return state
         }
         case SELECT_TILE: {
-            const {row, column} = action.payload;
+            const {row, column} = action.payload
             return {
                 ...state,
                 highlightedRow: row,

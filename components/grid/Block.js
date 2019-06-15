@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { StyleSheet, View } from 'react-native'
 import { connect } from 'react-redux'
+import { getBlock } from "../../selectors/selectors"
 
 import Tile from './tiles/Tile'
 import HighlightedTile from './tiles/HighlightedTile'
@@ -27,7 +28,6 @@ class Block extends React.Component {
                     xIndex={i}
                     yIndex={yIndex}
                     content={this.props.numbers[blockIndex]}
-                    clickEvent={this.props.clickEvent}
                 />)
             } else if (this.props.highlightedRow == i || this.props.highlightedColumn == yIndex){
                 tiles.push(<HighlightedTile
@@ -35,7 +35,6 @@ class Block extends React.Component {
                     xIndex={i}
                     yIndex={yIndex}
                     content={this.props.numbers[blockIndex]}
-                    clickEvent={this.props.clickEvent}
                 />)
             } else {
                 tiles.push(<Tile
@@ -43,7 +42,6 @@ class Block extends React.Component {
                     xIndex={i}
                     yIndex={yIndex}
                     content={this.props.numbers[blockIndex]}
-                    clickEvent={this.props.clickEvent}
                 />)
             }
             blockIndex++
@@ -80,8 +78,8 @@ const styles = StyleSheet.create({
     }
 });
 
-const mapStateToProps = state => {
-    return { numbers: getBlock(state, this.props.blockId) };
+const mapStateToProps = (state, ownProps) => {
+    return { numbers: getBlock(state, ownProps.blockIndex) };
 };
 
 export default connect(mapStateToProps)(Block);
