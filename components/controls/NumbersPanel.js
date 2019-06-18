@@ -1,26 +1,21 @@
 import React, { Component } from 'react'
 import { StyleSheet, View } from 'react-native'
 import NumberButton from './NumberButton'
-export default class NumbersPanel extends React.Component {
-    onButtonClick(e, number) {
-        console.log(number)
-    }
 
-    render() {
-        return (
-            <View style={styles.panel}>
-                <NumberButton title="1" clickEvent={this.onButtonClick} />
-                <NumberButton title="2" clickEvent={this.onButtonClick} />
-                <NumberButton title="3" clickEvent={this.onButtonClick} />
-                <NumberButton title="4" clickEvent={this.onButtonClick} />
-                <NumberButton title="5" clickEvent={this.onButtonClick} />
-                <NumberButton title="6" clickEvent={this.onButtonClick} />
-                <NumberButton title="7" clickEvent={this.onButtonClick} />
-                <NumberButton title="8" clickEvent={this.onButtonClick} />
-                <NumberButton title="9" clickEvent={this.onButtonClick} />
-            </View>
-        );
-    }
+const NumbersPanel = (props) => {
+    return (
+        <View style={styles.panel}>
+            <NumberButton value={1}/>
+            <NumberButton value={2}/>
+            <NumberButton value={3}/>
+            <NumberButton value={4}/>
+            <NumberButton value={5}/>
+            <NumberButton value={6}/>
+            <NumberButton value={7}/>
+            <NumberButton value={8}/>
+            <NumberButton value={9}/>
+        </View>
+    );
 }
 
 const styles = StyleSheet.create({
@@ -32,3 +27,5 @@ const styles = StyleSheet.create({
         justifyContent: 'space-around'
     }
 });
+
+export default NumbersPanel;

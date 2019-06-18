@@ -42,12 +42,17 @@ export default function (state = initialState, action) {
     switch (action.type) {
         case FILL_TILE: {
             const {row, column, content} = action.payload
+            if (row === null || column === null || content === null) {
+                return state
+            }
             state.rows[row][column] = content
             state.columns[column][row] = content
             let blockIndex = Math.floor(row / 3) + Math.floor(column / 3) * 3
             let blockContentIndex = row % 3 + (column % 3) * 3
             state.blocks[blockIndex][blockContentIndex] = content
-            return state
+            return {
+                ...state
+            }
         }
         case SELECT_TILE: {
             const {row, column} = action.payload
