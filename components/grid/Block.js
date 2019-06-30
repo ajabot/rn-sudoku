@@ -10,31 +10,31 @@ import SelectedTile from './tiles/SelectedTile'
 
 class Block extends React.Component {
     renderTiles(rowIndex) {
-        const xIndex = this.props.xIndex * 3
-        const yIndex = this.props.yIndex * 3 + rowIndex
+        const xIndex = this.props.xIndex * 3 + rowIndex
+        const yIndex = this.props.yIndex * 3
         let blockIndex = rowIndex * 3
         let tiles = [];
 
-        for (i = xIndex; i < (xIndex + 3); i++) {
-            if (this.props.highlightedRow == i && this.props.highlightedColumn == yIndex) {
+        for (i = yIndex; i < (yIndex + 3); i++) {
+            if (this.props.highlightedRow == xIndex && this.props.highlightedColumn == i) {
                 tiles.push(<SelectedTile
                     key={i}
-                    xIndex={i}
-                    yIndex={yIndex}
+                    xIndex={xIndex}
+                    yIndex={i}
                     content={this.props.numbers[blockIndex]}
                 />)
-            } else if (this.props.highlightedRow == i || this.props.highlightedColumn == yIndex){
+            } else if (this.props.highlightedRow == xIndex || this.props.highlightedColumn == i){
                 tiles.push(<HighlightedTile
                     key={i}
-                    xIndex={i}
-                    yIndex={yIndex}
+                    xIndex={xIndex}
+                    yIndex={i}
                     content={this.props.numbers[blockIndex]}
                 />)
             } else {
                 tiles.push(<Tile
                     key={i}
-                    xIndex={i}
-                    yIndex={yIndex}
+                    xIndex={xIndex}
+                    yIndex={i}
                     content={this.props.numbers[blockIndex]}
                 />)
             }

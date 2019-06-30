@@ -15,17 +15,17 @@ class Grid extends React.Component {
             <View style={styles.container}>
                 <View style={styles.row}>
                     <Block blockIndex={0} xIndex={0} yIndex={0} highlightedColumn={this.props.highlightedColumn} highlightedRow={this.props.highlightedRow}/>
-                    <Block blockIndex={1} xIndex={1} yIndex={0} highlightedColumn={this.props.highlightedColumn} highlightedRow={this.props.highlightedRow}/>
-                    <Block blockIndex={2} xIndex={2} yIndex={0} highlightedColumn={this.props.highlightedColumn} highlightedRow={this.props.highlightedRow}/>
+                    <Block blockIndex={1} xIndex={0} yIndex={1} highlightedColumn={this.props.highlightedColumn} highlightedRow={this.props.highlightedRow}/>
+                    <Block blockIndex={2} xIndex={0} yIndex={2} highlightedColumn={this.props.highlightedColumn} highlightedRow={this.props.highlightedRow}/>
                 </View>
                 <View style={styles.row}>
-                    <Block blockIndex={3} xIndex={0} yIndex={1} highlightedColumn={this.props.highlightedColumn} highlightedRow={this.props.highlightedRow}/>
+                    <Block blockIndex={3} xIndex={1} yIndex={0} highlightedColumn={this.props.highlightedColumn} highlightedRow={this.props.highlightedRow}/>
                     <Block blockIndex={4} xIndex={1} yIndex={1} highlightedColumn={this.props.highlightedColumn} highlightedRow={this.props.highlightedRow}/>
-                    <Block blockIndex={5} xIndex={2} yIndex={1} highlightedColumn={this.props.highlightedColumn} highlightedRow={this.props.highlightedRow}/>
+                    <Block blockIndex={5} xIndex={1} yIndex={2} highlightedColumn={this.props.highlightedColumn} highlightedRow={this.props.highlightedRow}/>
                 </View>
                 <View style={styles.row}>
-                    <Block blockIndex={6} xIndex={0} yIndex={2} highlightedColumn={this.props.highlightedColumn} highlightedRow={this.props.highlightedRow}/>
-                    <Block blockIndex={7} xIndex={1} yIndex={2} highlightedColumn={this.props.highlightedColumn} highlightedRow={this.props.highlightedRow}/>
+                    <Block blockIndex={6} xIndex={2} yIndex={0} highlightedColumn={this.props.highlightedColumn} highlightedRow={this.props.highlightedRow}/>
+                    <Block blockIndex={7} xIndex={2} yIndex={1} highlightedColumn={this.props.highlightedColumn} highlightedRow={this.props.highlightedRow}/>
                     <Block blockIndex={8} xIndex={2} yIndex={2} highlightedColumn={this.props.highlightedColumn} highlightedRow={this.props.highlightedRow}/>
                 </View>
             </View>

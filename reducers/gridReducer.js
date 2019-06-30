@@ -3,7 +3,7 @@ import {FILL_TILE, SELECT_TILE} from "../actions/actionTypes";
 const initialState = {
     rows: [
         [2, 5, 0, 0, 0, 1, 0, 0, 0],
-        [0, 7, 9, 0, 9, 0, 5, 0, 0],
+        [0, 7, 9, 0, 3, 0, 5, 0, 0],
         [0, 0, 0, 0, 0, 0, 7, 0, 2],
         [0, 0, 0, 0, 0, 0, 0, 7, 0],
         [3, 0, 0, 8, 5, 2, 0, 0, 1],
@@ -17,7 +17,7 @@ const initialState = {
         [5, 7, 0, 0, 0, 6, 0, 0, 0],
         [0, 9, 0, 0, 0, 0, 6, 1, 0],
         [0, 0, 0, 0, 8, 0, 0, 0, 9],
-        [0, 9, 0, 0, 5, 0, 0, 2, 0],
+        [0, 3, 0, 0, 5, 0, 0, 2, 0],
         [1, 0, 0, 0, 2, 0, 0, 0, 0],
         [0, 5, 7, 0, 0, 0, 0, 6, 0],
         [0, 0, 0, 7, 0, 0, 0, 8, 3],
@@ -36,6 +36,39 @@ const initialState = {
     ],
     highlightedRow: null,
     highlightedColumn: null,
+    columnsNumberCounter: [
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    ],
+    rowsNumberCounter: [
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    ],
+    blocksNumberCounter: [
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    ]
 };
 
 export default function (state = initialState, action) {
@@ -45,11 +78,17 @@ export default function (state = initialState, action) {
             if (row === null || column === null || content === null) {
                 return state
             }
+
             state.rows[row][column] = content
             state.columns[column][row] = content
-            let blockIndex = Math.floor(row / 3) + Math.floor(column / 3) * 3
-            let blockContentIndex = row % 3 + (column % 3) * 3
+            let blockIndex = Math.floor(column / 3) + Math.floor(row / 3) * 3
+            let blockContentIndex = column % 3 + (row % 3) * 3
             state.blocks[blockIndex][blockContentIndex] = content
+
+            state.rowsNumberCounter[row][content - 1] = state.rows[row].reduce((n, x) => n + (x === content), 0)
+            state.columnsNumberCounter[column][content - 1] = state.columns[column].reduce((n, x) => n + (x === content), 0)
+            state.blocksNumberCounter[blockIndex][content - 1] = state.blocks[blockIndex].reduce((n, x) => n + (x === content), 0)
+
             return {
                 ...state
             }
