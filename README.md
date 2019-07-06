@@ -16,17 +16,17 @@ Sudoku game app made with react native
 
 1.  **Lauch the test app**
 
-    Thanks to Expo, you can try the app without installing it on your device.
     First of all, make sure the needed packages are installed after you've cloned the repo
 
     ```sh
     npm install
     ```
 
-    Once everything is install you can launch Expo typing
+    Then make sure Android and/ or Xcode are installed depending on which os you want to run the app. If they're not installed, make sure to follow the [react native documentation](https://facebook.github.io/react-native/docs/getting-started) (React Native CLI Quickstart tab).
+
+    Once installed, run one of the following commands with the corresponding emulator opened or device plugged to the computer.
 
     ```sh
-    npm start
+    react-native run-android
+    react-native run-ios
     ```
-
-    You also need to have the Expo app installed on your device. Open the app and flash the QR code that appeared in your terminal or your browser after doing the `npm start`. And now enjoy the app.
