@@ -1,4 +1,4 @@
-import {FILL_TILE, SELECT_TILE} from "./actionTypes"
+import {FILL_TILE, SELECT_TILE, RESET_GRID} from "./actionTypes"
 
 export const fillTile = (row, column, content) => ({
     type: FILL_TILE,
@@ -15,4 +15,8 @@ export const selectTile = (row, column) => ({
         row: row,
         column: column
     }
+})
+
+export const resetGrid = () => ({
+    type: RESET_GRID
 })

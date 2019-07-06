@@ -1,6 +1,6 @@
-import {FILL_TILE, SELECT_TILE} from "../actions/actionTypes";
+import {FILL_TILE, SELECT_TILE, RESET_GRID} from "../actions/actionTypes";
 
-const initialState = {
+const getInitialState = () => ({
     rows: [
         [2, 5, 0, 0, 0, 1, 0, 0, 0],
         [0, 7, 9, 0, 3, 0, 5, 0, 0],
@@ -68,8 +68,9 @@ const initialState = {
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
-    ]
-};
+    ],
+    gridCompleted: false
+});
 
 const countNumbers = (numbers) => {
     numberCounter = []
@@ -84,7 +85,19 @@ const countNumbers = (numbers) => {
     return numberCounter
 }
 
-export default function (state = initialState, action) {
+const isGridCompleted = (numbers) => {
+    for (i = 0; i < numbers.length; i++) {
+        for (j = 0; j < numbers[i].length; j++) {
+            if (numbers[i][j] != 1) {
+                return false
+            }
+        }
+    }
+
+    return true
+}
+
+export default function (state = getInitialState(), action) {
     switch (action.type) {
         case FILL_TILE: {
             const {row, column, content} = action.payload
@@ -102,6 +115,8 @@ export default function (state = initialState, action) {
             state.columnsNumberCounter = countNumbers(state.columns)
             state.blocksNumberCounter = countNumbers(state.blocks)
 
+            state.gridCompleted = isGridCompleted(state.rowsNumberCounter)
+
             return {
                 ...state
             }
@@ -113,6 +128,11 @@ export default function (state = initialState, action) {
                 highlightedRow: row,
                 highlightedColumn: column
             };
+        }
+        case RESET_GRID: {
+            return {
+                ...getInitialState()
+            }
         }
         default:
             return state;
