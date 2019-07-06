@@ -27,7 +27,7 @@ const Tile = (props) => {
     return (
         <TouchableWithoutFeedback onPress={() => { props.selectTile(props.xIndex, props.yIndex) }}>
             <View style={tileStyle}>
-                <Text>
+                <Text style={{color: props.conflicted ? 'red' : 'black'}}>
                     {content}
                 </Text>
             </View>

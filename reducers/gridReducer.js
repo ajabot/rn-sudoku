@@ -71,6 +71,19 @@ const initialState = {
     ]
 };
 
+const countNumbers = (numbers) => {
+    numberCounter = []
+    for (i = 0; i < numbers.length; i++) {
+        let  group = []
+        for (j = 1; j <= 9; j++) {
+            group.push(numbers[i].reduce((n, x) => n + (x === j), 0))
+        }
+        numberCounter.push(group)
+    }
+
+    return numberCounter
+}
+
 export default function (state = initialState, action) {
     switch (action.type) {
         case FILL_TILE: {
@@ -85,9 +98,9 @@ export default function (state = initialState, action) {
             let blockContentIndex = column % 3 + (row % 3) * 3
             state.blocks[blockIndex][blockContentIndex] = content
 
-            state.rowsNumberCounter[row][content - 1] = state.rows[row].reduce((n, x) => n + (x === content), 0)
-            state.columnsNumberCounter[column][content - 1] = state.columns[column].reduce((n, x) => n + (x === content), 0)
-            state.blocksNumberCounter[blockIndex][content - 1] = state.blocks[blockIndex].reduce((n, x) => n + (x === content), 0)
+            state.rowsNumberCounter = countNumbers(state.rows)
+            state.columnsNumberCounter = countNumbers(state.columns)
+            state.blocksNumberCounter = countNumbers(state.blocks)
 
             return {
                 ...state

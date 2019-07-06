@@ -1,12 +1,23 @@
 import React, { Component } from 'react'
 import { StyleSheet, View } from 'react-native'
 import { connect } from 'react-redux'
-import { getBlock } from "../../selectors/selectors"
+import { getBlock, getBlockContentCounter } from "../../selectors/selectors"
 import { fillTile } from "../../actions/actions";
 
 import Tile from './Tile'
 
 class Block extends React.Component {
+    isConflicted(row, column, content) {
+        if (this.props.contentCount[content - 1] > 1 ||
+            this.props.rowsNumberCount[row][content - 1] > 1 ||
+            this.props.columnsNumberCount[column][content - 1] > 1 
+        ) {
+            return true
+        }
+
+        return false;
+    }
+
     renderTiles(rowIndex) {
         const xIndex = this.props.xIndex * 3 + rowIndex
         const yIndex = this.props.yIndex * 3
@@ -23,12 +34,14 @@ class Block extends React.Component {
                 style = 'default'
             }
          
+
             tiles.push(<Tile
                 key={i}
                 xIndex={xIndex}
                 yIndex={i}
                 content={this.props.numbers[blockIndex]}
                 style={style}
+                conflicted={this.isConflicted(xIndex, i, this.props.numbers[blockIndex])}
             />)
     
             blockIndex++
@@ -67,7 +80,10 @@ const styles = StyleSheet.create({
 
 const mapStateToProps = (state, ownProps) => {
     return {
-        numbers: [...getBlock(state, ownProps.blockIndex)]
+        numbers: [...getBlock(state, ownProps.blockIndex)],
+        contentCount: [...getBlockContentCounter(state, ownProps.blockIndex)],
+        rowsNumberCount: state.rowsNumberCounter,
+        columnsNumberCount: state.columnsNumberCounter
     };
 };
 
